@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_above="@+id/app"
+            android:layout_marginBottom="20dp"
+            android:background="@color/purple_500">
+
+            <Button
+                android:id="@+id/test_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textStyle="bold"
+                android:layout_marginRight="155dp"/>
+
+            <Button
+                android:id="@+id/main_button_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cornerRadius="45dp"
+                android:text="Settings"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/main_textview_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="This is my first android app"
+                android:textStyle="bold"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Activity created"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_margin="50dp"
+            >
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        >
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
